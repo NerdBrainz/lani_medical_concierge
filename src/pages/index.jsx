@@ -6,6 +6,7 @@ import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
+import { Testimonials } from '@/components/Testimonials'
 import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
@@ -15,9 +16,6 @@ import laniImage2 from '@/images/photos/lani-image-2.png'
 import laniImage3 from '@/images/photos/lani-image-3.png'
 import laniImage4 from '@/images/photos/lani-image-4.png'
 import laniImage5 from '@/images/photos/lani-image-5.png'
-import { formatDate } from '@/lib/formatDate'
-import { generateRssFeed } from '@/lib/generateRssFeed'
-import { getAllServices } from '@/lib/getAllServices'
 
 function MailIcon(props) {
   return (
@@ -62,29 +60,6 @@ function BriefcaseIcon(props) {
         className="stroke-zinc-400 dark:stroke-zinc-500"
       />
     </svg>
-  )
-}
-
-function Service({ service }) {
-  return (
-    <Card as="service">
-      <Card.Title href={`/services/${service.slug}`}>
-        {service.title}
-      </Card.Title>
-      <Card.Eyebrow as="time" dateTime={service.date} decorate>
-        {formatDate(service.date)}
-      </Card.Eyebrow>
-      <Card.Description>{service.description}</Card.Description>
-      <Card.Cta>Learn more </Card.Cta>
-    </Card>
-  )
-}
-
-function SocialLink({ icon: Icon, ...props }) {
-  return (
-    <Link className="group -m-1 p-1" {...props}>
-      <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
-    </Link>
   )
 }
 
@@ -225,7 +200,20 @@ function Photos() {
   )
 }
 
-export default function Home({ services }) {
+export default function Home() {
+  const services = [
+    'Appointment scheduling: Assistance in scheduling medical appointments with specialist doctors, clinics, or hospitals, ensuring timely access to healthcare services.',
+    'Hospital selection: Guidance and recommendations for selecting the most suitable hospitals or clinics based on your specific medical needs and preferences.',
+    'Physician referrals: Assistance in finding and connecting with reputable doctors, specialists, or surgeons who are experts in their respective fields.',
+    'Interpretation and translation services: Provision of interpreters or translators to facilitate effective communication between patients and healthcare providers, particularly for international patients.',
+    'Airport transfer and accommodation: Arrangement of transportation services to and from the airport, as well as assistance in finding suitable accommodation near the medical facilities.',
+    'Medical record coordination: Assistance in obtaining and organizing medical records, test results, and other relevant documents to ensure seamless transfer of information between healthcare providers.',
+    'Visa and travel support: Guidance on visa requirements and assistance with necessary paperwork for patients traveling from abroad, including support for visa extensions if required.',
+    'Second opinion services: Facilitation of second opinions from renowned medical experts to provide patients with additional perspectives on their diagnoses or treatment plans.',
+    'Medical billing and insurance coordination: Support with billing and insurance claims, including liaising with insurance companies and providing cost estimates for medical procedures.',
+    'Post-treatment care: Coordination of follow-up appointments, rehabilitation services, and other post-treatment care requirements to ensure a smooth recovery process.',
+    'Wellness and preventive care: Access to wellness programs, health screenings, and preventive care services, focusing on maintaining overall well-being.',
+  ]
   return (
     <>
       <Head>
@@ -255,32 +243,8 @@ export default function Home({ services }) {
       </Container>
       <Photos />
       <Container className="mt-24 md:mt-28">
-        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          <div className="flex flex-col gap-16">
-            {services.map((service) => (
-              <Service key={service.slug} service={service} />
-            ))}
-          </div>
-          <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
-            <Resume />
-          </div>
-        </div>
+        <Testimonials />
       </Container>
     </>
   )
-}
-
-export async function getStaticProps() {
-  if (process.env.NODE_ENV === 'production') {
-    await generateRssFeed()
-  }
-
-  return {
-    props: {
-      services: (await getAllServices())
-        .slice(0, 4)
-        .map(({ component, ...meta }) => meta),
-    },
-  }
 }
