@@ -229,15 +229,18 @@ export default function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Transforming Healthcare Experience in Taichung: Your Premier Medical
-            Concierge Service Provider
+            <span className="text-4xl font-bold tracking-tight text-teal-400 text-zinc-800 dark:text-teal-200 sm:text-5xl">
+              Lani
+            </span>{' '}
+            Taichung Medical Concierge
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Experience exceptional healthcare with Lani Medical Concierge. We
-            prioritize your well-being by providing personalized medical
-            assistance, renowned specialists, and state-of-the-art facilities.
-            Trust us to guide your health journey in the heart of Taichung,
-            Taiwan.
+            My name is Lani, and I provide medical concierge services in the
+            heart of Taichung. Experience exceptional healthcare with Lani
+            Medical Concierge. We prioritize your well-being by providing
+            personalized medical assistance, renowned specialists, and
+            state-of-the-art facilities. Trust us to guide your health journey
+            in the heart of Taichung, Taiwan.
           </p>
         </div>
       </Container>

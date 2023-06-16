@@ -97,10 +97,10 @@ export function Testimonials() {
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-xl text-center">
-          <h2 className="text-lg font-semibold leading-8 tracking-tight text-teal-600 dark:text-zinc-100">
+          <h2 className="text-lg font-semibold leading-8 tracking-tight text-teal-600 dark:text-teal-200">
             Testimonials
           </h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-zinc-100 sm:text-4xl">
+          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-teal-200 sm:text-4xl">
             Some of our amazing clients
           </p>
         </div>

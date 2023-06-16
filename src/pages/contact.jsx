@@ -20,7 +20,10 @@ export default function Contact() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="mb-12 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Get In Touch
+            Get In Touch with{' '}
+            <span className="text-4xl font-bold tracking-tight text-teal-400 text-zinc-800 dark:text-teal-200 sm:text-5xl">
+              Lani
+            </span>{' '}
           </h1>
         </div>
         <section className="body-font relative text-gray-600">
