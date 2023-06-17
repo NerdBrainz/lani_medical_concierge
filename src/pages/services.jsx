@@ -20,14 +20,48 @@ export default function ServicesIndex() {
   return (
     <>
       <Head>
-        <title>Services - Lani Medical Concierge</title>
+        <title>Services | Lani Taichung Medical Concierge</title>
         <meta
           name="description"
-          content="Transforming Healthcare Experience in Taichung: Your Premier Medical Concierge Service Provider"
+          content="Lani Taichung Medical Concierge offers a comprehensive range of personalized healthcare services in Taichung. Our services include appointment scheduling, hospital selection, physician referrals, interpretation and translation services, airport transfer and accommodation, medical record coordination, visa and travel support, second opinion services, medical billing and insurance coordination, post-treatment care, and wellness and preventive care. We cater to the needs of both local and international patients, ensuring a seamless and stress-free healthcare experience. Contact us to learn more about how our dedicated team can assist you with your healthcare needs in Taichung."
         />
+        <link rel="canonical" href="https://taichungconcierge.com/services" />
+        <meta
+          name="keywords"
+          content="Lani Taichung Medical Concierge, healthcare services, Taichung, appointment scheduling, hospital selection, physician referrals, interpretation services, translation services, airport transfer, accommodation, medical record coordination, visa support, travel support, second opinion services, medical billing, insurance coordination, post-treatment care, wellness care, preventive care"
+        />
+        <meta
+          property="og:title"
+          content="Services | Lani Taichung Medical Concierge"
+        />
+        <meta
+          property="og:description"
+          content="Lani Taichung Medical Concierge offers a comprehensive range of personalized healthcare services in Taichung. Our services include appointment scheduling, hospital selection, physician referrals, interpretation and translation services, airport transfer and accommodation, medical record coordination, visa and travel support, second opinion services, medical billing and insurance coordination, post-treatment care, and wellness and preventive care. We cater to the needs of both local and international patients, ensuring a seamless and stress-free healthcare experience. Contact us to learn more about how our dedicated team can assist you with your healthcare needs in Taichung."
+        />
+        <meta
+          property="og:image"
+          content="https://taichungconcierge.com/images/services-image.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://taichungconcierge.com/services"
+        />
+        <meta
+          name="twitter:title"
+          content="Services | Lani Taichung Medical Concierge"
+        />
+        <meta
+          name="twitter:description"
+          content="Lani Taichung Medical Concierge offers a comprehensive range of personalized healthcare services in Taichung. Our services include appointment scheduling, hospital selection, physician referrals, interpretation and translation services, airport transfer and accommodation, medical record coordination, visa and travel support, second opinion services, medical billing and insurance coordination, post-treatment care, and wellness and preventive care. We cater to the needs of both local and international patients, ensuring a seamless and stress-free healthcare experience. Contact us to learn more about how our dedicated team can assist you with your healthcare needs in Taichung."
+        />
+        <meta
+          name="twitter:image"
+          content="https://taichungconcierge.com/images/services-image.jpg"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <SimpleLayout
-        title="Premium Medical Concierge Services in Taichung: Expert Care and Tailored Solutions for Your Health Needs"
+        title="Expert Care and Tailored Solutions for Your Healthcare Needs"
         intro="Welcome to our comprehensive range of medical concierge services in Taichung. At our medical concierge, we strive to provide you with exceptional care and tailored solutions for all your health needs. Whether you require assistance with doctor appointments, hospital admissions, specialized treatments, or wellness services, our dedicated team is here to guide and support you every step of the way."
       >
         <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">

@@ -5,7 +5,7 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import { InstagramIcon } from '@/components/SocialIcons'
-import portraitImage from '@/images/avatar.png'
+import portraitImage from '../images/avatar.png'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
@@ -36,12 +36,42 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About - Lani Medical Concierge</title>
+        <title>About | Lani Taichung Medical Concierge</title>
         <meta
           name="description"
-          content="Meet Lani, Your Trusted Medical Concierge in Taichung
-          "
+          content="Lani Taichung Medical Concierge is a leading healthcare service provider in Taichung, offering personalized medical assistance and concierge services. With a team of experienced professionals, we provide comprehensive healthcare solutions, including hospital appointments, medical translations, and transportation arrangements. Our mission is to ensure a seamless and stress-free medical experience for local and international patients. Discover how our dedicated team can assist you in navigating the medical landscape in Taichung. Contact us today for a consultation."
         />
+        <link rel="canonical" href="https://taichungconcierge.com/about" />
+        <meta
+          name="keywords"
+          content="Lani Taichung Medical Concierge, healthcare service provider, Taichung, personalized medical assistance, concierge services, hospital appointments, medical translations, transportation arrangements, local and international patients, medical experience, medical landscape, consultation"
+        />
+        <meta
+          property="og:title"
+          content="About | Lani Taichung Medical Concierge"
+        />
+        <meta
+          property="og:description"
+          content="Lani Taichung Medical Concierge is a leading healthcare service provider in Taichung, offering personalized medical assistance and concierge services. With a team of experienced professionals, we provide comprehensive healthcare solutions, including hospital appointments, medical translations, and transportation arrangements. Our mission is to ensure a seamless and stress-free medical experience for local and international patients. Discover how our dedicated team can assist you in navigating the medical landscape in Taichung. Contact us today for a consultation."
+        />
+        <meta
+          property="og:image"
+          content="https://taichungconcierge.com/images/about-image.jpg"
+        />
+        <meta property="og:url" content="https://taichungconcierge.com/about" />
+        <meta
+          name="twitter:title"
+          content="About | Lani Taichung Medical Concierge"
+        />
+        <meta
+          name="twitter:description"
+          content="Lani Taichung Medical Concierge is a leading healthcare service provider in Taichung, offering personalized medical assistance and concierge services. With a team of experienced professionals, we provide comprehensive healthcare solutions, including hospital appointments, medical translations, and transportation arrangements. Our mission is to ensure a seamless and stress-free medical experience for local and international patients. Discover how our dedicated team can assist you in navigating the medical landscape in Taichung. Contact us today for a consultation."
+        />
+        <meta
+          name="twitter:image"
+          content="https://taichungconcierge.com/images/about-image.jpg"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Container className="mt-16 sm:mt-32">
         <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
@@ -52,6 +82,7 @@ export default function About() {
                 alt="Picture of pretty Asian woman"
                 sizes="(min-width: 1024px) 32rem, 20rem"
                 className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+                priority
               />
             </div>
           </div>

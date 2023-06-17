@@ -1,175 +1,16 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
+
 import clsx from 'clsx'
 
-import { Button } from '@/components/Button'
-import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import { Testimonials } from '@/components/Testimonials'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
+
 import laniImage1 from '@/images/photos/lani-image-1.png'
 import laniImage2 from '@/images/photos/lani-image-2.png'
 import laniImage3 from '@/images/photos/lani-image-3.png'
 import laniImage4 from '@/images/photos/lani-image-4.png'
 import laniImage5 from '@/images/photos/lani-image-5.png'
-
-function MailIcon(props) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-      {...props}
-    >
-      <path
-        d="M2.75 7.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z"
-        className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
-      />
-      <path
-        d="m4 6 6.024 5.479a2.915 2.915 0 0 0 3.952 0L20 6"
-        className="stroke-zinc-400 dark:stroke-zinc-500"
-      />
-    </svg>
-  )
-}
-
-function BriefcaseIcon(props) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-      {...props}
-    >
-      <path
-        d="M2.75 9.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z"
-        className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
-      />
-      <path
-        d="M3 14.25h6.249c.484 0 .952-.002 1.316.319l.777.682a.996.996 0 0 0 1.316 0l.777-.682c.364-.32.832-.319 1.316-.319H21M8.75 6.5V4.75a2 2 0 0 1 2-2h2.5a2 2 0 0 1 2 2V6.5"
-        className="stroke-zinc-400 dark:stroke-zinc-500"
-      />
-    </svg>
-  )
-}
-
-function Newsletter() {
-  return (
-    <form
-      action="/thank-you"
-      className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
-    >
-      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <MailIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Stay up to date</span>
-      </h2>
-      <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        Get notified when I publish something new, and unsubscribe at any time.
-      </p>
-      <div className="mt-6 flex">
-        <input
-          type="email"
-          placeholder="Email address"
-          aria-label="Email address"
-          required
-          className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
-        />
-        <Button type="submit" className="ml-4 flex-none">
-          Join
-        </Button>
-      </div>
-    </form>
-  )
-}
-
-function Resume() {
-  let resume = [
-    {
-      company: 'Planetaria',
-      title: 'CEO',
-      logo: logoPlanetaria,
-      start: '2019',
-      end: {
-        label: 'Present',
-        dateTime: new Date().getFullYear(),
-      },
-    },
-    {
-      company: 'Airbnb',
-      title: 'Product Designer',
-      logo: logoAirbnb,
-      start: '2014',
-      end: '2019',
-    },
-    {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: logoFacebook,
-      start: '2011',
-      end: '2014',
-    },
-    {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
-    },
-  ]
-
-  return (
-    <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <BriefcaseIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Work</span>
-      </h2>
-      <ol className="mt-6 space-y-4">
-        {resume.map((role, roleIndex) => (
-          <li key={roleIndex} className="flex gap-4">
-            <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-              <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
-            </div>
-            <dl className="flex flex-auto flex-wrap gap-x-2">
-              <dt className="sr-only">Company</dt>
-              <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
-                {role.company}
-              </dd>
-              <dt className="sr-only">Role</dt>
-              <dd className="text-xs text-zinc-500 dark:text-zinc-400">
-                {role.title}
-              </dd>
-              <dt className="sr-only">Date</dt>
-              <dd
-                className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
-                aria-label={`${role.start.label ?? role.start} until ${
-                  role.end.label ?? role.end
-                }`}
-              >
-                <time dateTime={role.start.dateTime ?? role.start}>
-                  {role.start.label ?? role.start}
-                </time>{' '}
-                <span aria-hidden="true">—</span>{' '}
-                <time dateTime={role.end.dateTime ?? role.end}>
-                  {role.end.label ?? role.end}
-                </time>
-              </dd>
-            </dl>
-          </li>
-        ))}
-      </ol>
-    </div>
-  )
-}
 
 function Photos() {
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
@@ -218,13 +59,44 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Lani Concierge | Transforming Healthcare Experience in Taichung: Your
-          Premier Medical Concierge Service Provider
+          Lani Taichung Medical Concierge | Personalized Healthcare Services in
+          Taichung
         </title>
         <meta
           name="description"
-          content="Transforming Healthcare Experience in Taichung: Your Premier Medical Concierge Service Provider"
+          content="Lani Taichung Medical Concierge is a trusted healthcare service provider in Taichung, offering personalized medical assistance and concierge services. Our experienced team caters to the needs of local and international patients, providing comprehensive healthcare solutions, including hospital appointments, medical translations, and transportation arrangements. We strive to ensure a seamless and stress-free medical experience for our clients. Discover how our dedicated team can assist you with your healthcare needs in Taichung. Contact us today for personalized assistance."
         />
+        <link rel="canonical" href="https://taichungconcierge.com" />
+        <meta
+          name="keywords"
+          content="Lani Taichung Medical Concierge, healthcare service provider, Taichung, personalized medical assistance, concierge services, hospital appointments, medical translations, transportation arrangements, local and international patients, healthcare needs, personalized assistance"
+        />
+        <meta
+          property="og:title"
+          content="Lani Taichung Medical Concierge | Personalized Healthcare Services in Taichung"
+        />
+        <meta
+          property="og:description"
+          content="Lani Taichung Medical Concierge is a trusted healthcare service provider in Taichung, offering personalized medical assistance and concierge services. Our experienced team caters to the needs of local and international patients, providing comprehensive healthcare solutions, including hospital appointments, medical translations, and transportation arrangements. We strive to ensure a seamless and stress-free medical experience for our clients. Discover how our dedicated team can assist you with your healthcare needs in Taichung. Contact us today for personalized assistance."
+        />
+        <meta
+          property="og:image"
+          content="https://taichungconcierge.com/images/home-image.jpg"
+        />
+        <meta property="og:url" content="https://taichungconcierge.com" />
+        <meta
+          name="twitter:title"
+          content="Lani Taichung Medical Concierge | Personalized Healthcare Services in Taichung"
+        />
+        <meta
+          name="twitter:description"
+          content="Lani Taichung Medical Concierge is a trusted healthcare service provider in Taichung, offering personalized medical assistance and concierge services. Our experienced team caters to the needs of local and international patients, providing comprehensive healthcare solutions, including hospital appointments, medical translations, and transportation arrangements. We strive to ensure a seamless and stress-free medical experience for our clients. Discover how our dedicated team can assist you with your healthcare needs in Taichung. Contact us today for personalized assistance."
+        />
+        <meta
+          name="twitter:image"
+          content="https://taichungconcierge.com/images/home-image.jpg"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">

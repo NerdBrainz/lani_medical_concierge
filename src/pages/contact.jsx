@@ -1,21 +1,50 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
-import clsx from 'clsx'
+
 import { Container } from '@/components/Container'
 
 export default function Contact() {
   return (
     <>
       <Head>
-        <title>
-          Lani Concierge | Transforming Healthcare Experience in Taichung: Your
-          Premier Medical Concierge Service Provider
-        </title>
+        <title>Contact | Lani Taichung Medical Concierge</title>
         <meta
           name="description"
-          content="Transforming Healthcare Experience in Taichung: Your Premier Medical Concierge Service Provider"
+          content="Contact Lani Taichung Medical Concierge for personalized healthcare services in Taichung. Our experienced team is available to assist you with your healthcare needs, including appointment scheduling, hospital selection, physician referrals, interpretation and translation services, airport transfer and accommodation, medical record coordination, visa and travel support, second opinion services, medical billing and insurance coordination, post-treatment care, and wellness and preventive care. Reach out to us today to discuss how we can provide you with seamless and stress-free healthcare assistance in Taichung."
         />
+        <link rel="canonical" href="https://taichungconcierge.com/contact" />
+        <meta
+          name="keywords"
+          content="Lani Taichung Medical Concierge, contact, healthcare services, Taichung, appointment scheduling, hospital selection, physician referrals, interpretation services, translation services, airport transfer, accommodation, medical record coordination, visa support, travel support, second opinion services, medical billing, insurance coordination, post-treatment care, wellness care, preventive care"
+        />
+        <meta
+          property="og:title"
+          content="Contact | Lani Taichung Medical Concierge"
+        />
+        <meta
+          property="og:description"
+          content="Contact Lani Taichung Medical Concierge for personalized healthcare services in Taichung. Our experienced team is available to assist you with your healthcare needs, including appointment scheduling, hospital selection, physician referrals, interpretation and translation services, airport transfer and accommodation, medical record coordination, visa and travel support, second opinion services, medical billing and insurance coordination, post-treatment care, and wellness and preventive care. Reach out to us today to discuss how we can provide you with seamless and stress-free healthcare assistance in Taichung."
+        />
+        <meta
+          property="og:image"
+          content="https://taichungconcierge.com/images/contact-image.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://taichungconcierge.com/contact"
+        />
+        <meta
+          name="twitter:title"
+          content="Contact | Lani Taichung Medical Concierge"
+        />
+        <meta
+          name="twitter:description"
+          content="Contact Lani Taichung Medical Concierge for personalized healthcare services in Taichung. Our experienced team is available to assist you with your healthcare needs, including appointment scheduling, hospital selection, physician referrals, interpretation and translation services, airport transfer and accommodation, medical record coordination, visa and travel support, second opinion services, medical billing and insurance coordination, post-treatment care, and wellness and preventive care. Reach out to us today to discuss how we can provide you with seamless and stress-free healthcare assistance in Taichung."
+        />
+        <meta
+          name="twitter:image"
+          content="https://taichungconcierge.com/images/contact-image.jpg"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
