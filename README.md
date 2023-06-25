@@ -1,3 +1,3 @@
 # Lani Medical Concierge
 
-Build with nextjs and tailwindUI with love by NerdBrainz.
+Powered by nextjs and styled with tailwindcss and tailwindUI with love by NerdBrainz llc.
