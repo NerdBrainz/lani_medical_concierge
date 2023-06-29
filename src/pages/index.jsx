@@ -11,6 +11,8 @@ import laniImage2 from '@/images/photos/lani-image-2.png'
 import laniImage3 from '@/images/photos/lani-image-3.png'
 import laniImage4 from '@/images/photos/lani-image-4.png'
 import laniImage5 from '@/images/photos/lani-image-5.png'
+import Pricing from '@/components/Pricing'
+import portraitImage from '@/images/avatar.png'
 
 function Photos() {
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
@@ -79,10 +81,7 @@ export default function Home() {
           property="og:description"
           content="Lani Taichung Medical Concierge is a trusted healthcare service provider in Taichung, offering personalized medical assistance and concierge services. Our experienced team caters to the needs of local and international patients, providing comprehensive healthcare solutions, including hospital appointments, medical translations, and transportation arrangements. We strive to ensure a seamless and stress-free medical experience for our clients. Discover how our dedicated team can assist you with your healthcare needs in Taichung. Contact us today for personalized assistance."
         />
-        <meta
-          property="og:image"
-          content="https://taichungconcierge.com/images/home-image.jpg"
-        />
+        <meta property="og:image" content={portraitImage} />
         <meta property="og:url" content="https://taichungconcierge.com" />
         <meta
           name="twitter:title"
@@ -92,10 +91,7 @@ export default function Home() {
           name="twitter:description"
           content="Lani Taichung Medical Concierge is a trusted healthcare service provider in Taichung, offering personalized medical assistance and concierge services. Our experienced team caters to the needs of local and international patients, providing comprehensive healthcare solutions, including hospital appointments, medical translations, and transportation arrangements. We strive to ensure a seamless and stress-free medical experience for our clients. Discover how our dedicated team can assist you with your healthcare needs in Taichung. Contact us today for personalized assistance."
         />
-        <meta
-          name="twitter:image"
-          content="https://taichungconcierge.com/images/home-image.jpg"
-        />
+        <meta name="twitter:image" content={portraitImage} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Container className="mt-9">
@@ -120,6 +116,7 @@ export default function Home() {
       <Container className="mt-24 md:mt-28">
         <Testimonials />
       </Container>
+      <Pricing />
     </>
   )
 }
