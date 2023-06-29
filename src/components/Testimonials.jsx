@@ -1,11 +1,16 @@
 import Image from 'next/image'
+import user1 from '@/images/photos/user_1.png'
+import user2 from '@/images/photos/user_2.png'
+import user3 from '@/images/photos/user_3.png'
+import user4 from '@/images/photos/user_4.png'
+import user5 from '@/images/photos/user_5.png'
 
 const featuredTestimonial = {
-  body: 'Working with Lani Tachung Medical Concierge has been an exceptional experience. Their team provided top-notch service and went above and beyond to ensure my well-being. The personalized care and attention to detail they offer is unparalleled. I highly recommend their services to anyone seeking a reliable and trustworthy medical concierge. Thank you, Lani Tachung, for your exceptional care!',
+  body: 'Working with Lani has been an exceptional experience.The personalized care and attention to detail she offers is unparalleled. I highly recommend her services to anyone seeking a reliable and trustworthy medical concierge. Thank you, Lani, for your exceptional care!',
   author: {
     name: 'Brenna Goyette',
     handle: 'brennagoyette',
-    imageUrl: '/images/avatar.png',
+    imageUrl: user1,
     logoUrl: 'https://tailwindui.com/img/logos/savvycal-logo-gray-900.svg',
   },
 }
@@ -13,53 +18,45 @@ const testimonials = [
   [
     [
       {
-        body: 'I cant recommend Lani Tachung Medical Concierge enough! Their teams professionalism and knowledge are unmatched. They made the entire medical process seamless and stress-free. Thank you for your exceptional care!',
+        body: 'I cant recommend Lani enough! Her professionalism and knowledge are unmatched. She made the entire medical process seamless and stress-free. Thank you for your exceptional care!',
         author: {
-          name: 'Leslie Alexander',
-          handle: 'lesliealexander',
-          imageUrl:
-            'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+          name: 'Tom Reynolds',
+          handle: 'tomreynolds',
+          imageUrl: user2,
         },
       },
-      // More testimonials...
     ],
     [
       {
-        body: 'Lani Tachung Medical Concierge provided me with the best medical assistance I could ask for. They were responsive, compassionate, and truly went above and beyond. Im grateful for their support during a challenging time.',
+        body: 'Lani provided me with the best medical assistance I could ask for. She was responsive, compassionate, and truly went above and beyond. Im grateful for her support during a challenging time.',
         author: {
           name: 'Lindsay Walton',
           handle: 'lindsaywalton',
-          imageUrl:
-            'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+          imageUrl: user3,
         },
       },
-      // More testimonials...
     ],
   ],
   [
     [
       {
-        body: 'Lani Tachung Medical Concierge exceeded my expectations. Their attention to detail and personalized approach made me feel valued and well taken care of. I highly recommend their services to anyone in need of exceptional medical assistance.',
+        body: 'Lani definitely exceeded my expectations. Her attention to my needs and care for my well being made me feel valued and well taken care of. I highly recommend her services to anyone in Taichung who needs medical assistance.',
         author: {
-          name: 'Tom Cook',
-          handle: 'tomcook',
-          imageUrl:
-            'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+          name: 'Richard Cook',
+          handle: 'richardcook',
+          imageUrl: user4,
         },
       },
-      // More testimonials...
     ],
     [
       {
-        body: 'Choosing Lani Tachung Medical Concierge was one of the best decisions I made. Their teams expertise and guidance were invaluable. They made sure I had access to the best doctors and resources. Thank you for going the extra mile!',
+        body: 'Choosing to have Lani help me was one of the best decisions I made. Her expertise and guidance was so good! She made sure I had access to the best doctors and resources. Thank you for going the extra mile Lani!',
         author: {
           name: 'Leonard Krasner',
           handle: 'leonardkrasner',
-          imageUrl:
-            'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+          imageUrl: user5,
         },
       },
-      // More testimonials...
     ],
   ],
 ]
