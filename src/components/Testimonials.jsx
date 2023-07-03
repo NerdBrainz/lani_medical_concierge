@@ -1,9 +1,9 @@
 import Image from 'next/image'
-import user1 from '@/images/photos/user_1.png'
-import user2 from '@/images/photos/user_2.png'
-import user3 from '@/images/photos/user_3.png'
-import user4 from '@/images/photos/user_4.png'
-import user5 from '@/images/photos/user_5.png'
+import user1 from 'public/images/photos/user_1.png'
+import user2 from 'public/images/photos/user_2.png'
+import user3 from 'public/images/photos/user_3.png'
+import user4 from 'public/images/photos/user_4.png'
+import user5 from 'public/images/photos/user_5.png'
 
 const featuredTestimonial = {
   body: 'Working with Lani has been an exceptional experience.The personalized care and attention to detail she offers is unparalleled. I highly recommend her services to anyone seeking a reliable and trustworthy medical concierge. Thank you, Lani, for your exceptional care!',

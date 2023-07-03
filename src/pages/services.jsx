@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import Pricing from '@/components/Pricing'
-import portraitImage from '@/images/avatar.png'
 
 export default function ServicesIndex() {
   const services = [
@@ -38,7 +37,7 @@ export default function ServicesIndex() {
           property="og:description"
           content="Lani Taichung Medical Concierge offers a comprehensive range of personalized healthcare services in Taichung. Our services include appointment scheduling, hospital selection, physician referrals, interpretation and translation services, airport transfer and accommodation, medical record coordination, visa and travel support, second opinion services, medical billing and insurance coordination, post-treatment care, and wellness and preventive care. We cater to the needs of both local and international patients, ensuring a seamless and stress-free healthcare experience. Contact us to learn more about how our dedicated team can assist you with your healthcare needs in Taichung."
         />
-        <meta property="og:image" content={portraitImage} />
+        <meta property="og:image" content="public/images/avatar.png" />
         <meta
           property="og:url"
           content="https://www.lanimedicalconcierge.com/services"
@@ -51,7 +50,7 @@ export default function ServicesIndex() {
           name="twitter:description"
           content="Lani Taichung Medical Concierge offers a comprehensive range of personalized healthcare services in Taichung. Our services include appointment scheduling, hospital selection, physician referrals, interpretation and translation services, airport transfer and accommodation, medical record coordination, visa and travel support, second opinion services, medical billing and insurance coordination, post-treatment care, and wellness and preventive care. We cater to the needs of both local and international patients, ensuring a seamless and stress-free healthcare experience. Contact us to learn more about how our dedicated team can assist you with your healthcare needs in Taichung."
         />
-        <meta name="twitter:image" content={portraitImage} />
+        <meta name="twitter:image" content="public/images/avatar.png" />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <SimpleLayout

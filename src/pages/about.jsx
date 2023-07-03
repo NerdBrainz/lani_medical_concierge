@@ -2,10 +2,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
-
 import { Container } from '@/components/Container'
-import { InstagramIcon } from '@/components/SocialIcons'
-import portraitImage from '@/images/avatar.png'
+
+import portraitImage from 'public/images/avatar.png'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
@@ -57,7 +56,7 @@ export default function About() {
           property="og:description"
           content="Lani Taichung Medical Concierge is a leading healthcare service provider in Taichung, offering personalized medical assistance and concierge services. With a team of experienced professionals, we provide comprehensive healthcare solutions, including hospital appointments, medical translations, and transportation arrangements. Our mission is to ensure a seamless and stress-free medical experience for local and international patients. Discover how our dedicated team can assist you in navigating the medical landscape in Taichung. Contact us today for a consultation."
         />
-        <meta property="og:image" content={portraitImage} />
+        <meta property="og:image" content="public/images/avatar.png" />
         <meta
           property="og:url"
           content="https://www.lanimedicalconcierge.com/about"
@@ -70,7 +69,7 @@ export default function About() {
           name="twitter:description"
           content="Lani Taichung Medical Concierge is a leading healthcare service provider in Taichung, offering personalized medical assistance and concierge services. With a team of experienced professionals, we provide comprehensive healthcare solutions, including hospital appointments, medical translations, and transportation arrangements. Our mission is to ensure a seamless and stress-free medical experience for local and international patients. Discover how our dedicated team can assist you in navigating the medical landscape in Taichung. Contact us today for a consultation."
         />
-        <meta name="twitter:image" content={portraitImage} />
+        <meta name="twitter:image" content="public/images/avatar.png" />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Container className="mt-16 sm:mt-32">
