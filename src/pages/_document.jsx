@@ -51,6 +51,21 @@ export default function Document() {
           href={`${process.env.NEXT_PUBLIC_SITE_URL}/rss/feed.json`}
         />
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <meta
+          property="og:image"
+          content="https://www.lanimedicalconcierge.com/images/avatar.png"
+        />
+
+        <meta property="og:title" content="Lani Taichung Medical Concierge" />
+
+        <meta
+          property="og:description"
+          content="Lani Taichung Medical Concierge, healthcare service provider, Taichung, personalized medical assistance, concierge services, hospital appointments, medical translations, transportation arrangements, local and international patients, medical experience, medical landscape, consultation"
+        />
+
+        <meta property="og:image:width" content="1200" />
+
+        <meta property="og:image:height" content="630" />
       </Head>
       <body className="flex h-full flex-col bg-zinc-50 dark:bg-black">
         <Main />

@@ -74,28 +74,24 @@ export default function Home() {
           content="Lani Taichung Medical Concierge, healthcare service provider, Taichung, personalized medical assistance, concierge services, hospital appointments, medical translations, transportation arrangements, local and international patients, healthcare needs, personalized assistance"
         />
         <meta
-          property="og:title"
-          content="Lani Taichung Medical Concierge | Personalized Healthcare Services in Taichung"
+          property="og:image"
+          content="https://www.lanimedicalconcierge.com/images/avatar.png"
         />
+
+        <meta property="og:title" content="Lani Taichung Medical Concierge" />
+
         <meta
           property="og:description"
-          content="Lani Taichung Medical Concierge is a trusted healthcare service provider in Taichung, offering personalized medical assistance and concierge services. Our experienced team caters to the needs of local and international patients, providing comprehensive healthcare solutions, including hospital appointments, medical translations, and transportation arrangements. We strive to ensure a seamless and stress-free medical experience for our clients. Discover how our dedicated team can assist you with your healthcare needs in Taichung. Contact us today for personalized assistance."
+          content="Lani Taichung Medical Concierge, healthcare service provider, Taichung, personalized medical assistance, concierge services, hospital appointments, medical translations, transportation arrangements, local and international patients, medical experience, medical landscape, consultation"
         />
-        <meta property="og:image" content="public/images/avatar.png" />
+
+        <meta property="og:image:width" content="1200" />
+
+        <meta property="og:image:height" content="630" />
         <meta
           property="og:url"
           content="https://www.lanimedicalconcierge.com/"
         />
-        <meta
-          name="twitter:title"
-          content="Lani Taichung Medical Concierge | Personalized Healthcare Services in Taichung"
-        />
-        <meta
-          name="twitter:description"
-          content="Lani Taichung Medical Concierge is a trusted healthcare service provider in Taichung, offering personalized medical assistance and concierge services. Our experienced team caters to the needs of local and international patients, providing comprehensive healthcare solutions, including hospital appointments, medical translations, and transportation arrangements. We strive to ensure a seamless and stress-free medical experience for our clients. Discover how our dedicated team can assist you with your healthcare needs in Taichung. Contact us today for personalized assistance."
-        />
-        <meta name="twitter:image" content="public/images/avatar.png" />
-        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">

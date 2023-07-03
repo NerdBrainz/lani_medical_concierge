@@ -31,7 +31,10 @@ export default function Contact() {
           property="og:description"
           content="Contact Lani Taichung Medical Concierge for personalized healthcare services in Taichung. Our experienced team is available to assist you with your healthcare needs, including appointment scheduling, hospital selection, physician referrals, interpretation and translation services, airport transfer and accommodation, medical record coordination, visa and travel support, second opinion services, medical billing and insurance coordination, post-treatment care, and wellness and preventive care. Reach out to us today to discuss how we can provide you with seamless and stress-free healthcare assistance in Taichung."
         />
-        <meta property="og:image" content="public/images/avatar.png" />
+        <meta
+          property="og:image"
+          content="https://www.lanimedicalconcierge.com/images/avatar.png"
+        />
         <meta
           property="og:url"
           content="https://www.lanimedicalconcierge.com/contact"
@@ -44,7 +47,10 @@ export default function Contact() {
           name="twitter:description"
           content="Contact Lani Taichung Medical Concierge for personalized healthcare services in Taichung. Our experienced team is available to assist you with your healthcare needs, including appointment scheduling, hospital selection, physician referrals, interpretation and translation services, airport transfer and accommodation, medical record coordination, visa and travel support, second opinion services, medical billing and insurance coordination, post-treatment care, and wellness and preventive care. Reach out to us today to discuss how we can provide you with seamless and stress-free healthcare assistance in Taichung."
         />
-        <meta name="twitter:image" content="public/images/avatar.png" />
+        <meta
+          name="twitter:image"
+          content="https://www.lanimedicalconcierge.com/images/avatar.png"
+        />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Container className="mt-9">
