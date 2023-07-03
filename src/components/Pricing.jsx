@@ -17,7 +17,7 @@ export default function Pricing() {
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-white">
             Appointment are easy to schedule and emergency help is available for
-            a simple additional fee of NTD $3000.
+            a simple additional fee of NTD $3000 for 2 hours.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">

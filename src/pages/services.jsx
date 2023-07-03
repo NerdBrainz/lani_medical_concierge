@@ -11,11 +11,6 @@ export default function ServicesIndex() {
     'Hospital selection: Guidance and recommendations for selecting the most suitable hospitals or clinics based on your specific medical needs and preferences.',
     'Physician referrals: Assistance in finding and connecting with reputable doctors, specialists, or surgeons who are experts in their respective fields.',
     'Interpretation and translation services: Provision of interpreters or translators to facilitate effective communication between patients and healthcare providers, particularly for international patients.',
-    'Airport transfer and accommodation: Arrangement of transportation services to and from the airport, as well as assistance in finding suitable accommodation near the medical facilities.',
-    'Medical record coordination: Assistance in obtaining and organizing medical records, test results, and other relevant documents to ensure seamless transfer of information between healthcare providers.',
-    'Visa and travel support: Guidance on visa requirements and assistance with necessary paperwork for patients traveling from abroad, including support for visa extensions if required.',
-    'Second opinion services: Facilitation of second opinions from renowned medical experts to provide patients with additional perspectives on their diagnoses or treatment plans.',
-    'Medical billing and insurance coordination: Support with billing and insurance claims, including liaising with insurance companies and providing cost estimates for medical procedures.',
     'Post-treatment care: Coordination of follow-up appointments, rehabilitation services, and other post-treatment care requirements to ensure a smooth recovery process.',
     'Wellness and preventive care: Access to wellness programs, health screenings, and preventive care services, focusing on maintaining overall well-being.',
   ]
