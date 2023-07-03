@@ -41,7 +41,10 @@ export default function About() {
           name="description"
           content="Lani Taichung Medical Concierge is a leading healthcare service provider in Taichung, offering personalized medical assistance and concierge services. With a team of experienced professionals, we provide comprehensive healthcare solutions, including hospital appointments, medical translations, and transportation arrangements. Our mission is to ensure a seamless and stress-free medical experience for local and international patients. Discover how our dedicated team can assist you in navigating the medical landscape in Taichung. Contact us today for a consultation."
         />
-        <link rel="canonical" href="https://taichungconcierge.com/about" />
+        <link
+          rel="canonical"
+          href="https://www.lanimedicalconcierge.com/about"
+        />
         <meta
           name="keywords"
           content="Lani Taichung Medical Concierge, healthcare service provider, Taichung, personalized medical assistance, concierge services, hospital appointments, medical translations, transportation arrangements, local and international patients, medical experience, medical landscape, consultation"
@@ -55,7 +58,10 @@ export default function About() {
           content="Lani Taichung Medical Concierge is a leading healthcare service provider in Taichung, offering personalized medical assistance and concierge services. With a team of experienced professionals, we provide comprehensive healthcare solutions, including hospital appointments, medical translations, and transportation arrangements. Our mission is to ensure a seamless and stress-free medical experience for local and international patients. Discover how our dedicated team can assist you in navigating the medical landscape in Taichung. Contact us today for a consultation."
         />
         <meta property="og:image" content={portraitImage} />
-        <meta property="og:url" content="https://taichungconcierge.com/about" />
+        <meta
+          property="og:url"
+          content="https://www.lanimedicalconcierge.com/about"
+        />
         <meta
           name="twitter:title"
           content="About | Lani Taichung Medical Concierge"

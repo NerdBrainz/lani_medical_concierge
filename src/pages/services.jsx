@@ -22,7 +22,10 @@ export default function ServicesIndex() {
           name="description"
           content="Lani Taichung Medical Concierge offers a comprehensive range of personalized healthcare services in Taichung. Our services include appointment scheduling, hospital selection, physician referrals, interpretation and translation services, airport transfer and accommodation, medical record coordination, visa and travel support, second opinion services, medical billing and insurance coordination, post-treatment care, and wellness and preventive care. We cater to the needs of both local and international patients, ensuring a seamless and stress-free healthcare experience. Contact us to learn more about how our dedicated team can assist you with your healthcare needs in Taichung."
         />
-        <link rel="canonical" href="https://taichungconcierge.com/services" />
+        <link
+          rel="canonical"
+          href="https://www.lanimedicalconcierge.com/services"
+        />
         <meta
           name="keywords"
           content="Lani Taichung Medical Concierge, healthcare services, Taichung, appointment scheduling, hospital selection, physician referrals, interpretation services, translation services, airport transfer, accommodation, medical record coordination, visa support, travel support, second opinion services, medical billing, insurance coordination, post-treatment care, wellness care, preventive care"
@@ -38,7 +41,7 @@ export default function ServicesIndex() {
         <meta property="og:image" content={portraitImage} />
         <meta
           property="og:url"
-          content="https://taichungconcierge.com/services"
+          content="https://www.lanimedicalconcierge.com/services"
         />
         <meta
           name="twitter:title"

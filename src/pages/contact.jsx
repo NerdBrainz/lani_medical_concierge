@@ -14,7 +14,10 @@ export default function Contact() {
           name="description"
           content="Contact Lani Taichung Medical Concierge for personalized healthcare services in Taichung. Our experienced team is available to assist you with your healthcare needs, including appointment scheduling, hospital selection, physician referrals, interpretation and translation services, airport transfer and accommodation, medical record coordination, visa and travel support, second opinion services, medical billing and insurance coordination, post-treatment care, and wellness and preventive care. Reach out to us today to discuss how we can provide you with seamless and stress-free healthcare assistance in Taichung."
         />
-        <link rel="canonical" href="https://taichungconcierge.com/contact" />
+        <link
+          rel="canonical"
+          href="https://www.lanimedicalconcierge.com/contact"
+        />
         <meta
           name="keywords"
           content="Lani Taichung Medical Concierge, contact, healthcare services, Taichung, appointment scheduling, hospital selection, physician referrals, interpretation services, translation services, airport transfer, accommodation, medical record coordination, visa support, travel support, second opinion services, medical billing, insurance coordination, post-treatment care, wellness care, preventive care"
@@ -30,7 +33,7 @@ export default function Contact() {
         <meta property="og:image" content={portraitImage} />
         <meta
           property="og:url"
-          content="https://taichungconcierge.com/contact"
+          content="https://www.lanimedicalconcierge.com/contact"
         />
         <meta
           name="twitter:title"
